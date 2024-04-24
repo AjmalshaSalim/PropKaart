@@ -27,9 +27,14 @@
       .mySlides, .mySlideOne, .mySlideTwo, .mySlideThree, .mySlideFour, .mySlideFive, .mySlideSix, .mySlideSeven{
         display:none;
         height: 200px;
+        overflow: hidden;
       }
       .ImgStyle {
-        height: 90%;
+        height: 100%;
+        transition: transform .2s;
+      }
+      .ImgStyle:hover{
+        transform: scale(1.5);
       }
       .w3-button{
         background-color:#00000065 !important;
@@ -43,6 +48,18 @@
       .w3-button:hover{
         background-color: #f07c009a !important;
       }
+      .row {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.SpecialCard {
+    flex: 0 0 25%; /* Each card takes exactly 25% of the row width */
+    max-width: 25%; /* Prevent any overflow caused by padding/margin */
+    box-sizing: border-box;
+}
+
       </style>
   </head>
   <body>
@@ -107,13 +124,18 @@
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
     
-    <div class="site-blocks-cover overlay" style="background-image: url('images/hero_bg_2.jpg');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
+    <div class="site-blocks-cover overlay" style="background-image: url('images/white-Bag.jpg');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
             <h1 class="mb-4">0% Brokerage.<br> 100% Trust.</h1>
             <p class="mb-5">1105 Madison Plaza Suite 120 Chesapeake, CA, California</p>
-            <p><a href="#" class="btn btn-primary px-5 py-3">Take a Tour</a></p>
+            <!-- <p><a href="#" class="btn btn-primary px-5 py-3">Take a Tour</a></p> -->
+            <div class="SearchBoxContainer">
+              <input type="text" class="SearchBox">
+              But
+            </div>
+            
           </div>
         </div>
       </div>
@@ -169,8 +191,9 @@
                           <svg xmlns="http://www.w3.org/2000/svg" class="ContentIcons" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f07a00" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5zM576 368a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L416 385.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z"/></svg>
                         </div> 
                           <h3 class="choose-card-h3">Trust</h3>
-                          <p class="choose-card-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. 
-                            Aliquam illo, cum sed ea? Ducimus quos, ea Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <p class="choose-card-p">
+                            Supreme. Through transparency, integrity, and reliability,
+                            we cultivate enduring relationships, making your real estate journey a confident and fulfilling experience</p>
                       </div>
                   </div>
                   <div class="col-lg-4 col-sm-6">
@@ -179,18 +202,18 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="ContentIcons" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f07a00" d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM16 128c-8.8 0-16 7.2-16 16V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V128H16zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V144c0-8.8-7.2-16-16-16H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"/></svg>
                       </div>  
                         <h3 class="choose-card-h3">Professionalism</h3>
-                          <p class="choose-card-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. 
-                            Aliquam illo, cum sed ea? Ducimus quos, ea Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <p class="choose-card-p">Professionalism. Our expertise and dedication ensure your real estate journey is seamless, personalized,
+                            and successful. Trust us to elevate your experience beyond expectations</p>
                       </div>
                   </div>
                   <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
                       <div class="choose-card choose-card-response">
                         <div class="IconsContainer">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="ContentIcons" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f07a00" d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"/></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="ContentIcons" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f07a00" d="M160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h50.7L9.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L256 109.3V160c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H160zM576 80a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM448 208a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM400 384a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48 80a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm128 0a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM272 384a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48 80a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM144 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM576 336a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm-48-80a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
                         </div>
-                          <h3 class="choose-card-h3">Benevolence</h3>
-                          <p class="choose-card-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. 
-                            Aliquam illo, cum sed ea? Ducimus quos, ea Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <h3 class="choose-card-h3">Growth</h3>
+                          <p class="choose-card-p">We're not just building homes;
+                            we're forging lasting partnerships and shaping the future of real estate with one more satisfied customer.</p>
                       </div>
                   </div>
               </div>
@@ -209,6 +232,11 @@
         <h2 class="mb-5">Browse Apartments</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt
           officia, error reiciendis ab quod?</p>
+      </div>
+      <div class="buttonControl" style=" height:50px;width: 50px;">
+        <button onclick="slideCards('left')" class="" style="height: 40px; width: 20px; border: none; ">&#10094;</button>
+<button onclick="slideCards('right')" class="" style="height: 40px; width: 20px; border: none;">&#10095;</button>
+
       </div>
     </div>
     <div class="row">
@@ -247,7 +275,9 @@
             </div>
           <div class="unit-9-content">
             <h2>Assetz Sora & saki</h2>
-            <span>$130/night</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="LocationMark" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+              Bangalore</span>
             <!-- <span>with Wendy Matos</span> -->
           </div>
         </a>
@@ -286,7 +316,9 @@
             </div>
           <div class="unit-9-content">
             <h2>Birla Alokya</h2>
-            <span>$230/night</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="LocationMark" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+              Bangalore</span>
           </div>
         </a>
       </div>
@@ -326,7 +358,9 @@
             </div>
           <div class="unit-9-content">
             <h2>Godrej Bengal lamps</h2>
-            <span>$130/night</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="LocationMark" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+              Bangalore</span>
           </div>
         </a>
       </div>
@@ -363,7 +397,9 @@
             </div>
           <div class="unit-9-content">
             <h2>SOBHA Crystal Meadows</h2>
-            <span>$150/night</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="LocationMark" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+              Bangalore</span>
           </div>
         </a>
       </div>
@@ -536,7 +572,7 @@
   </div>
 </div>
 <!-- carousal -->
-    <div class="site-section">
+    <!-- <div class="site-section">
       <div class="container">
         <div class="row">
           <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
@@ -552,7 +588,7 @@
               <div class="unit-9-content">
                 <h2>Nashville</h2>
                 <span>$130/night</span>
-                <!-- <span>with Wendy Matos</span> -->
+                <span>with Wendy Matos</span>
               </div>
             </a>
           </div>
@@ -590,7 +626,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
 
     
@@ -608,28 +644,36 @@
         <div class="site-block-retro d-block d-md-flex">
 
           <a href="#" class="col1 unit-9 no-height" data-aos="fade-up" data-aos-delay="100">
-            <div class="image" style="background-image: url('images/img_2.jpg');"></div>
+            <div class="image" style="background-image: url('images/builder-godrej-bengal/IMG-20240419-WA0021.jpg'); background-size:cover;"></div>
             <div class="unit-9-content">
-              <h2>Baltimore Apartment</h2>
-              <span>$600/night</span>
+              <h2>Godrej Bengal lamps
+              </h2>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="LocationMark" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                Bangalore</span>
             </div>
           </a>
 
           <div class="col2 ml-auto">
 
             <a href="#" class="col2-row1 unit-9 no-height" data-aos="fade-up" data-aos-delay="200">
-              <div class="image" style="background-image: url('images/img_3.jpg');"></div>
+              <div class="image" style="background-image: url('images/builder-mahindra/IMG-20240419-WA0048.jpg');"></div>
               <div class="unit-9-content">
-                <h2>Austin Apartment</h2>
-                <span>$290/night</span>
+                <h2>Mahindra zen</h2>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="LocationMark" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                  Bangalore</span>
               </div>
             </a>
 
             <a href="#" class="col2-row2 unit-9 no-height" data-aos="fade-up" data-aos-delay="300">
-              <div class="image" style="background-image: url('images/img_1.jpg');"></div>
+              <div class="image" style="background-image: url('images/builder-birla/IMG-20240419-WA0044.jpg');"></div>
               <div class="unit-9-content">
-                <h2>Atlanta Apartment</h2>
-                <span>$1,290/night</span>
+                <h2>Birla Alokya
+                </h2>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="LocationMark" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                  Bangalore</span>
               </div>
             </a>
 
@@ -732,7 +776,7 @@
             <a href="single.html"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
             <div class="p-4 bg-white">
               <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="single.html">Fugit nam obcaecati fuga itaque</a></h2>
+              <h2 class="h5 text-black mb-3"><a href="single.html" class="LinkText">Fugit nam obcaecati fuga itaque</a></h2>
               
             </div>
           </div>
@@ -740,7 +784,7 @@
             <a href="single.html"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
             <div class="p-4 bg-white">
               <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="single.html">Fugit nam obcaecati fuga itaque</a></h2>
+              <h2 class="h5 text-black mb-3"><a href="single.html" class="LinkText">Fugit nam obcaecati fuga itaque</a></h2>
               
             </div>
           </div>
@@ -748,7 +792,7 @@
             <a href="single.html"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
             <div class="p-4 bg-white">
               <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="single.html">Fugit nam obcaecati fuga itaque</a></h2>
+              <h2 class="h5 text-black mb-3"><a href="single.html" class="LinkText">Fugit nam obcaecati fuga itaque</a></h2>
               
             </div>
           </div>
@@ -850,7 +894,7 @@
           <div class="col-md-12">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy; All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank" >A2Z Alphabet Solutionz</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
@@ -1021,6 +1065,27 @@
       }
       x[slideIndexSeven-1].style.display = "block";  
     }
+    let scrollAmount = 0;
+
+function slideCards(direction) {
+    const row = document.querySelector('.row');
+    const cardWidth = document.querySelector('.SpecialCard').offsetWidth; // Width of a card
+    const maxScroll = row.scrollWidth - row.clientWidth; // Maximum scrollable width
+
+    if (direction === 'right') {
+        scrollAmount += cardWidth * 4; // Move right by 4 cards
+    } else {
+        scrollAmount -= cardWidth * 4; // Move left by 4 cards
+    }
+
+    // Clamp the scroll amount to stay within allowed boundaries
+    scrollAmount = Math.max(0, Math.min(scrollAmount, maxScroll));
+
+    row.scrollTo({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+}
     </script>
   </body>
 </html>
